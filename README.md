@@ -47,7 +47,9 @@ Es importante que para ver distintos resultados se modifique el numero mostrado 
 res[2].show()
 
 ## Resultados 
-
+<img src="evidencias/Resultado_3.png" width="500">
+<img src="evidencias/Resultado_4.png" width="500">
+<img src="evidencias/Resultado_5.png" width="500">
 
 ## Notas 
 
@@ -63,6 +65,10 @@ Se puede realizar un seguimieto en tiempo real.
 Se necesita Visual Studio Codde, es necesario utilizar python e instalar lo siguiente en la terminal: 
 
 & "C:\Users\ruta_modificar" -m pip install ultralytics opencv-python
+
+También es necesario descagar el documento best, somo el mostrado en la imagen:
+
+<img src="evidencias/Resultado_7.png" width="500">
 
 El bloque de texto es el siguiente: 
 
@@ -96,6 +102,12 @@ while cap.isOpened():
 
 cap.release()
 cv2.destroyAllWindows()
+
+
+
+Como resultado podemos hacer análsis de la piel en vivo (hay que considerar que se necesita una mejor iluminación para mejores resultados).
+
+<img src="evidencias/Resultado_6.png" width="500">
 
 
 ## Integrantes 
