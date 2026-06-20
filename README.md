@@ -40,5 +40,5 @@ res[2].show()
 
 Los documentos utilizados son generados en el mismo código, por lo tanto no es necesario hacer descargas extenas, solo se debe de tener en cuenta que al perder la conexión estos archivos no apareceran. 
 
-<img src="evidencias/resultado_1.jpg" width="500">
-<img src="evidencias/resultado_2.jpg" width="500">
+<img src="evidencias/Resultado_1.jpg" width="500">
+<img src="evidencias/Resultado_2.jpg" width="500">
