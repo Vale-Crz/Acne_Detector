@@ -56,7 +56,53 @@ Los documentos utilizados son generados en el mismo código, por lo tanto no es 
 <img src="evidencias/Resultado_1 (1).png" width="500">
 <img src="evidencias/Resultado_2.png" width="500">
 
+## EXTRA 
+
+Se puede realizar un seguimieto en tiempo real. 
+
+Se necesita Visual Studio Codde, es necesario utilizar python e instalar lo siguiente en la terminal: 
+
+& "C:\Users\ruta_modificar" -m pip install ultralytics opencv-python
+
+El bloque de texto es el siguiente: 
+
+from ultralytics import YOLO
+import cv2
+
+model = YOLO("best.pt")
+
+#video_path = "./Inputs/people_walking.mp4"
+cap = cv2.VideoCapture(0)
+
+while cap.isOpened():
+    # Leemos el frame del video
+    ret, frame = cap.read()
+    if not ret:
+        break
+
+    # Realizamos la inferencia de YOLO sobre el frame
+    results = model(frame)
+
+    # Extraemos los resultados
+    annotated_frame = results[0].plot()
+    #print(annotated_frame)
+
+    # Visualizamos los resultados
+    cv2.imshow("YOLO Inference", annotated_frame)
+
+    # El ciclo se rompe al presionar "Esc"
+    if cv2.waitKey(1) & 0xFF == 27:
+        break
+
+cap.release()
+cv2.destroyAllWindows()
+
+
 ## Integrantes 
 
 VALERIA ITZEL CRUZ RIVERA 23310313
 CYNTHIA JANETTE GARCIA AMEZCUA 23110191
+
+## Fuentes 
+
+OMES. (2025, 7 mayo). ¡Detecta lo que tú quieras! 🤖 Crea tu propio DETECTOR DE OBJETOS personalizado con YOLO [Vídeo]. YouTube. https://www.youtube.com/watch?v=jj1xmJYquXg 
