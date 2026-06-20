@@ -113,6 +113,7 @@ Como resultado podemos hacer análsis de la piel en vivo (hay que considerar que
 ## Integrantes 
 
 VALERIA ITZEL CRUZ RIVERA 23310313
+
 CYNTHIA JANETTE GARCIA AMEZCUA 23110191
 
 ## Fuentes 
