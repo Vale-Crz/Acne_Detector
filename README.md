@@ -105,7 +105,7 @@ cv2.destroyAllWindows()
 
 
 
-Como resultado podemos hacer análsis de la piel en vivo (hay que considerar que se necesita una mejor iluminación para mejores resultados).
+Como resultado podemos hacer análsis de la piel en vivo (hay que considerar que se necesita una mejor iluminación para mejores resultados así como una camara que permita realizar acercamientos más nitidos en la piel).
 
 <img src="evidencias/Resultado_6.png" width="500">
 
